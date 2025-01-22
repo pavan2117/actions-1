@@ -5,7 +5,7 @@ on:
 jobs:
   deploy:
     strategy:
-      fail-fast: flase
+      fail-fast: false
       max-parallel: 2
       matrix:
         os: [ubuntu-latest, ubuntu-20.04, windows-lates]

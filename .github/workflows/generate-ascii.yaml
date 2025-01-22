@@ -19,17 +19,13 @@ jobs:
       - name: checkout repo
         uses: actions/checkout@v4
 
-      # Runs a single command using the runners shell
-      - name: install cowsay
-        run: sudo apt-get install cowsay -y
-      
-      - name: generate ASCII artwork
-        run: cowsay -f dragon "Run for cover, ...." > dragon.txt
-
-      - name: read file
-        run: cat dragon.txt
-
       - name: list repo files
         run: ls -ltra
+
+      # Runs a single command using the runners shell
+      - name: executing shell script 
+        run: ./ascii-script.sh
+    
+      
           
       

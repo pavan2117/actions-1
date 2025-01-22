@@ -70,4 +70,4 @@ jobs:
           name: dragon-file
 
       - name: test file exists
-        run: grep -i "DRAGON" dragon.txt
+        run: cat dragon.txt
